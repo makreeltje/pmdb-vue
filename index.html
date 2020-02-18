@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title>HOND</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            {{message}}
+            <input type="text" v-model="message">
+            <ul>
+                <li v-for="band in bands">
+                    name: {{ band.name }} origin: {{ band.origin }}
+                </li>
+            </ul>
+
+            <div v-for="band in bands">
+                <h1>{{ band.name }}</h1>
+                <h3>{{ band.origin }}</h3>
+            </div>
+        </div>
+        
+
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    bands: [
+                        { name: "Bombs and Roses", origin: "Irak"},
+                        { name: "Bombs and Roses", origin: "Irak"},
+                        { name: "Bombs and Roses", origin: "Irak"},
+                        { name: "Bombs and Roses", origin: "Irak"},
+                        { name: "Bombs and Roses", origin: "Irak"},
+                        { name: "Bombs and Roses", origin: "Irak"},
+                        { name: "Bombs and Roses", origin: "Irak"}
+                    ]
+                }
+            });
+        </script>
+    </body>
+</html>
