@@ -59,6 +59,13 @@ export default {
     currentUser() {
       return this.$store.state.auth.user;
     },
+    showUserBoard() {
+      if (this.currentUser && this.currentUser.roles) {
+        return this.currentUser.roles.includes('ROLE_USER');
+      }
+
+      return false;
+    },
     showAdminBoard() {
       if (this.currentUser && this.currentUser.roles) {
         return this.currentUser.roles.includes('ROLE_ADMIN');
