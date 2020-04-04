@@ -1,66 +1,57 @@
 <template>
-  <div class="col-md-12">
-    <div class="card card-container">
-      <img
-        id="profile-img"
-        src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
-        class="profile-img-card"
-      />
-      <form name="form" @submit.prevent="handleLogin">
-        <div class="form-group">
-          <label for="username">Username</label>
-          <input
-            v-model="user.username"
-            v-validate="'required'"
-            type="text"
-            class="form-control"
-            name="username"
-          />
-          <div
-            v-if="errors.has('username')"
-            class="alert alert-danger"
-            role="alert"
-          >Username is required!</div>
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            v-model="user.password"
-            v-validate="'required'"
-            type="password"
-            class="form-control"
-            name="password"
-          />
-          <div
-            v-if="errors.has('password')"
-            class="alert alert-danger"
-            role="alert"
-          >Password is required!</div>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-primary btn-block" :disabled="loading">
-            <span v-show="loading" class="spinner-border spinner-border-sm"></span>
-            <span>Login</span>
-          </button>
-        </div>
-        <div class="form-group">
-          <div v-if="message" class="alert alert-danger" role="alert">{{message}}</div>
-        </div>
-      </form>
-    </div>
-  </div>
+  <v-app id="inspire">
+    <v-content>
+      <v-container class="fill-height" fluid>
+        <v-row align="center" justify="center">
+          <v-col cols="12" sm="8" md="4">
+            <v-card class="elevation-12">
+              <v-toolbar color="primary" dark flat>
+                <v-toolbar-title>Login form</v-toolbar-title>
+              </v-toolbar>
+              <v-card-text>
+                <v-form name="form" @submit.prevent="handleLogin">
+                  <v-text-field
+                    v-model="user.username"
+                    v-validate="'required'"
+                    type="text"
+                    name="username"
+                    prepend-icon="mdi-account"
+                  />
+
+                  <v-text-field
+                    v-model="user.password"
+                    v-validate="'required'"
+                    type="password"
+                    name="password"
+                    prepend-icon="mdi-lock"
+                  />
+                  <button class="btn btn-primary btn-block" :disabled="loading">
+                    <span v-show="loading" class="spinner-border spinner-border-sm"></span>
+                    <span>Login</span>
+                  </button>
+                </v-form>
+              </v-card-text>
+              <v-card-actions>
+                <v-spacer />
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import User from '../models/user';
+import User from "../models/user";
 
 export default {
-  name: 'Login',
+  name: "Login",
   data() {
     return {
-      user: new User('', ''),
+      user: new User("", ""),
       loading: false,
-      message: ''
+      message: ""
     };
   },
   computed: {
@@ -70,7 +61,7 @@ export default {
   },
   created() {
     if (this.loggedIn) {
-      this.$router.push('/profile');
+      this.$router.push("/profile");
     }
   },
   methods: {
@@ -83,9 +74,9 @@ export default {
         }
 
         if (this.user.username && this.user.password) {
-          this.$store.dispatch('auth/login', this.user).then(
+          this.$store.dispatch("auth/login", this.user).then(
             () => {
-              this.$router.push('/profile');
+              this.$router.push("/profile");
             },
             error => {
               this.loading = false;
