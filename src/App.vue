@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href class="navbar-brand" @click.prevent>PMDB</a>
+      <a href class="navbar-brand" @click.prevent>bezKoder</a>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/home" class="nav-link">
@@ -58,13 +58,6 @@ export default {
   computed: {
     currentUser() {
       return this.$store.state.auth.user;
-    },
-    showUserBoard() {
-      if (this.currentUser && this.currentUser.roles) {
-        return this.currentUser.roles.includes('ROLE_USER');
-      }
-
-      return false;
     },
     showAdminBoard() {
       if (this.currentUser && this.currentUser.roles) {

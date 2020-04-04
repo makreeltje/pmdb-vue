@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: "Profile",
+  name: 'Profile',
   computed: {
     currentUser() {
       return this.$store.state.auth.user;
@@ -34,7 +34,7 @@ export default {
   },
   mounted() {
     if (!this.currentUser) {
-      this.$router.push("/login");
+      this.$router.push('/login');
     }
   }
 };
