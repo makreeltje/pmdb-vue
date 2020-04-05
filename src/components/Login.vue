@@ -3,37 +3,47 @@
     <v-content>
       <v-container class="fill-height" fluid>
         <v-row align="center" justify="center">
-          <v-col cols="12" sm="8" md="4">
+          <v-col cols="12" md="6">
             <v-card class="elevation-12">
               <v-toolbar color="primary" dark flat>
-                <v-toolbar-title>Login form</v-toolbar-title>
+                <v-toolbar-title>Login</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
                 <v-form name="form" @submit.prevent="handleLogin">
                   <v-text-field
                     v-model="user.username"
-                    v-validate="'required'"
+                    :rules="[rules.required]"
                     type="text"
-                    name="username"
+                    label="Username"
                     prepend-icon="mdi-account"
+                    v-validate="'required'"
+                    required
                   />
 
                   <v-text-field
                     v-model="user.password"
-                    v-validate="'required'"
-                    type="password"
-                    name="password"
+                    :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                    :rules="[rules.required]"
+                    :type="show ? 'text' : 'password'"
+                    @click:append="show = !show"
+                    label="Password"
                     prepend-icon="mdi-lock"
+                    v-validate="'required'"
+                    required
                   />
-                  <button class="btn btn-primary btn-block" :disabled="loading">
-                    <span v-show="loading" class="spinner-border spinner-border-sm"></span>
-                    <span>Login</span>
-                  </button>
+
+                  <v-alert v-if="message" type="error">{{message}}</v-alert>
+
+                  <v-layout align-end justify-end class="my-2">
+                    <v-btn
+                      type="submit"
+                      color="primary"
+                      :disabled="loading"
+                      :loading="loading"
+                    >Login</v-btn>
+                  </v-layout>
                 </v-form>
               </v-card-text>
-              <v-card-actions>
-                <v-spacer />
-              </v-card-actions>
             </v-card>
           </v-col>
         </v-row>
@@ -51,7 +61,11 @@ export default {
     return {
       user: new User("", ""),
       loading: false,
-      message: ""
+      message: "",
+      show: false,
+      rules: {
+        required: v => !!v || 'This field is required'
+      }
     };
   },
   computed: {
@@ -81,7 +95,7 @@ export default {
             error => {
               this.loading = false;
               this.message =
-                (error.response && error.response.data) ||
+                (error.response && error.response.data.error) ||
                 error.message ||
                 error.toString();
             }
@@ -92,38 +106,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-label {
-  display: block;
-  margin-top: 10px;
-}
-
-.card-container.card {
-  max-width: 350px !important;
-  padding: 40px 40px;
-}
-
-.card {
-  background-color: #f7f7f7;
-  padding: 20px 25px 30px;
-  margin: 0 auto 25px;
-  margin-top: 50px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
-  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.profile-img-card {
-  width: 96px;
-  height: 96px;
-  margin: 0 auto 10px;
-  display: block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-}
-</style>

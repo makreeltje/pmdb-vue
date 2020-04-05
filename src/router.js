@@ -1,8 +1,13 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from './views/Home.vue';
-import Login from './views/Login.vue';
-import Register from './views/Register.vue';
+import Home from './components/Home.vue';
+import Login from './components/Login.vue';
+import Register from './components/Register.vue';
+import Profile from './components/Profile.vue';
+import BoardAdmin from './components/BoardAdmin.vue';
+import BoardModerator from './components/BoardModerator.vue';
+import BoardUser from './components/BoardUser.vue';
+import Movies from './components/Movies.vue';
 
 Vue.use(Router);
 
@@ -30,25 +35,30 @@ export const router = new Router({
       path: '/profile',
       name: 'profile',
       // lazy-loaded
-      component: () => import('./views/Profile.vue')
+      component: Profile
     },
     {
       path: '/admin',
       name: 'admin',
       // lazy-loaded
-      component: () => import('./views/BoardAdmin.vue')
+      component: BoardAdmin
     },
     {
       path: '/mod',
       name: 'moderator',
       // lazy-loaded
-      component: () => import('./views/BoardModerator.vue')
+      component: BoardModerator
     },
     {
       path: '/user',
       name: 'user',
       // lazy-loaded
-      component: () => import('./views/BoardUser.vue')
+      component: BoardUser
+    },
+    {
+      path: '/movies',
+      name: 'movies',
+      component: Movies
     }
   ]
 });
