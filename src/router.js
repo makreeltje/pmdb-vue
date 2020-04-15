@@ -7,7 +7,9 @@ import Profile from './components/Profile.vue';
 import BoardAdmin from './components/BoardAdmin.vue';
 import BoardModerator from './components/BoardModerator.vue';
 import BoardUser from './components/BoardUser.vue';
-import Movies from './components/Movies.vue';
+import LatestMovie from './components/LatestMovie.vue';
+import Movie from './components/Movie.vue';
+import SearchMovie from './components/SearchMovie';
 
 Vue.use(Router);
 
@@ -34,31 +36,39 @@ export const router = new Router({
     {
       path: '/profile',
       name: 'profile',
-      // lazy-loaded
       component: Profile
     },
     {
       path: '/admin',
       name: 'admin',
-      // lazy-loaded
       component: BoardAdmin
     },
     {
       path: '/mod',
       name: 'moderator',
-      // lazy-loaded
       component: BoardModerator
     },
     {
       path: '/user',
       name: 'user',
-      // lazy-loaded
       component: BoardUser
     },
     {
-      path: '/movies',
+      path: '/latestmovie',
       name: 'movies',
-      component: Movies
+      component: LatestMovie
+    },
+    {
+      path: '/movies/:id',
+      name: 'Movie',
+      props: true,
+      component: Movie
+    },
+    {
+      path: '/search/:name',
+      name: 'SearchMovie',
+      props: true,
+      component: SearchMovie
     }
   ]
 });
@@ -67,7 +77,7 @@ export const router = new Router({
 //     const publicPages = ['/login', '/register', '/home'];
 //     const authRequired = !publicPages.includes(to.path);
 //     const loggedIn = localStorage.getItem('user');
-  
+
 //     // trying to access a restricted page + not logged in
 //     // redirect to login page
 //     if (authRequired && !loggedIn) {

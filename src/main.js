@@ -5,6 +5,7 @@ import store from './store';
 import VeeValidate from 'vee-validate';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import VueFilterPrettyBytes from 'vue-filter-pretty-bytes';
 
 import {
   faHome,
@@ -21,6 +22,8 @@ library.add(faHome, faUser, faUserPlus, faSignInAlt, faSignOutAlt);
 Vue.config.productionTip = false;
 
 Vue.use(VeeValidate);
+Vue.use(require('vue-moment'));
+Vue.use(VueFilterPrettyBytes);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 

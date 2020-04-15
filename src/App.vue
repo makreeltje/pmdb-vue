@@ -126,6 +126,17 @@
               </v-list-item-content>
             </v-list-item>
           </router-link>
+
+          <router-link v-if="currentUser" to="/latestmovie">
+            <v-list-item link>
+              <v-list-item-icon>
+                <v-icon>mdi-movie</v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>Movies</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </router-link>
         </v-list>
 
         <template v-slot:append>

@@ -22,7 +22,7 @@
 
                   <v-text-field
                     v-model="user.password"
-                    :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                    :append-icon="show ? 'mdi-eye' : 'mdi-eye-off'"
                     :rules="[rules.required]"
                     :type="show ? 'text' : 'password'"
                     @click:append="show = !show"

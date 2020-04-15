@@ -95,7 +95,7 @@ export default {
         min3: v => v.length >= 3 || 'Min 3 characters',
         min6: v => v.length >= 6 || 'Min 6 characters',
         validEmail: v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-        confirmPassword: v => v === this.user.password || 'Passwords must match'
+        confirmPassword: v => v == this.user.password || 'Passwords must match'
       }
     };
   },
