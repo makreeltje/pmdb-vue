@@ -52,6 +52,7 @@ export const store = new Vuex.Store({
                         const token = response.data.accessToken
 
                         localStorage.setItem('access_token', token)
+                        localStorage.setItem('user', JSON.stringify(response.data));
                         context.commit('retrieveToken', token)
                         resolve(response)
                         //console.log(response)
