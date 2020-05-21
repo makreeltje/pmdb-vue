@@ -7,8 +7,7 @@
         name: "Logout",
         created() {
             this.$store.dispatch('destroyToken')
-                // eslint-disable-next-line no-unused-vars
-            .then(response => {
+            .then(() => {
                 this.$router.push('/login')
             })
         }

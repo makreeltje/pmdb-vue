@@ -5,7 +5,7 @@
         <v-row align="center" justify="center">
           <v-col cols="12" md="4">
             <v-card class="elevation-12">
-              <v-toolbar color="primary" dark flat>
+              <v-toolbar color="rgb(229, 160, 13)" dark flat>
                 <v-toolbar-title>Login</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
@@ -37,7 +37,6 @@
                   <v-layout align-end justify-end class="my-2">
                     <v-btn
                             type="submit"
-                            color="primary"
                             :disabled="loading"
                             :loading="loading"
                     >Login
@@ -75,13 +74,12 @@
                     username: this.username,
                     password: this.password,
                 })
-                    // eslint-disable-next-line no-unused-vars
-                    .then(response => {
+                    .then(() => {
                         this.$router.push('/movies')
                     })
                     .catch(error => {
                         this.loading = false;
-                        this.message = (error.response && error.response.data.error) || error.message || error.toString();
+                        this.message = error.response.data.message
                     })
             }
         }

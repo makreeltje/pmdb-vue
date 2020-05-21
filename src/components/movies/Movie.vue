@@ -1,9 +1,4 @@
 <template>
-  <!--<v-container v-if="loading">
-    <v-layout align-center justify-center>
-      <v-progress-circular :size="200" :width="10" color="primary" indeterminate></v-progress-circular>
-    </v-layout>
-  </v-container>-->
   <v-container fluid class="pa-0">
     <v-parallax :src="backdropUrl + singleMovie.backdrop_path" class="pa-0">
       <div class="wrap">

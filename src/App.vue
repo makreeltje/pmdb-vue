@@ -67,7 +67,7 @@
                     <router-link to="/profile">
                         <v-list-item v-if="loggedIn">
                             <v-list-item-content>
-                                <v-list-item-title>Welcome</v-list-item-title>
+                                <v-list-item-title>Welcome </v-list-item-title>
                             </v-list-item-content>
                         </v-list-item>
                     </router-link>
@@ -139,6 +139,17 @@
                             </v-list-item-content>
                         </v-list-item>
                     </router-link>
+
+                    <router-link v-if="loggedIn" to="/request">
+                        <v-list-item link>
+                            <v-list-item-icon>
+                                <v-icon>mdi-movie-search</v-icon>
+                            </v-list-item-icon>
+                            <v-list-item-content>
+                                <v-list-item-title>Request</v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </router-link>
                 </v-list>
 
                 <template v-slot:append>
@@ -158,10 +169,13 @@
 </template>
 
 <script>
+    import axios from 'axios'
+
     export default {
         data() {
             return {
-                drawer: null
+                drawer: null,
+
             };
         },
         computed: {
@@ -174,6 +188,18 @@
                 this.$store.dispatch("auth/logout");
                 this.$router.push("/login");
             }
+        },
+        created() {
+            axios.interceptors.response.use(
+                    response => response,
+                    error => {
+                        const status = error.response.status;
+                        if (status === 401) {
+                            this.$router.push("/logout");
+                        }
+                        return Promise.reject(error);
+                    }
+            );
         }
     };
 </script>
@@ -184,7 +210,7 @@
     }
 
     .v-parallax__content {
-        background: linear-gradient(45deg, black, transparent);
+        background: linear-gradient(0deg, #121212 1%, transparent);
     }
 
     .overview {
@@ -198,6 +224,34 @@
         margin: -330px 0 0 0;
         position: relative;
         z-index: 50;
+    }
+
+    .flex-container {
+        /* We first create a flex layout context */
+        display: flex;
+
+        /* Then we define the flow direction
+           and if we allow the items to wrap
+         * Remember this is the same as:
+         * flex-direction: row;
+         * flex-wrap: wrap;
+         */
+        flex-flow: row wrap;
+
+        /* Then we define how is distributed the remaining space */
+        justify-content: space-evenly;
+
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .flex-item {
+        padding: 20px;
+        margin-top: 10px;
+    }
+    .v-application a.link {
+        color: #e5a00d;
     }
 
     .wrap,
@@ -690,29 +744,14 @@
         max-height: 278px;
         max-width: 185px;
         width: 100%;
+        margin-bottom: 10px;
         -webkit-transition: -webkit-box-shadow 0.2s ease 0s;
         transition: -webkit-box-shadow 0.2s ease 0s;
         transition: box-shadow 0.2s ease 0s;
         transition: box-shadow 0.2s ease 0s, -webkit-box-shadow 0.2s ease 0s; }
-    @media (max-width: 860px) {
-        .item-image-wrap {
-            height: auto; } }
     .item-image-wrap:hover {
         -webkit-box-shadow: 0 0 2px 2px #e5a00d;
         box-shadow: 0 0 2px 2px #e5a00d; }
-    .logged .item-image-wrap:hover .item-new {
-        display: block; }
-    .item-image-wrap:hover .show-episode {
-        opacity: .9; }
-    .item-image-wrap:hover .item-actions {
-        opacity: 1; }
-    .item-image-wrap:hover .recommend-item,
-    .item-image-wrap:hover .add-to-watchlist,
-    .item-image-wrap:hover .remove-from-watchlist {
-        opacity: .9; }
-    .item-image-wrap:active {
-        -webkit-box-shadow: 0 0 2px 2px #94690d;
-        box-shadow: 0 0 2px 2px #94690d; }
 
     .item-image {
         -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.5);
@@ -720,59 +759,17 @@
         width: 100%;
         -webkit-transition: border 0.2s ease 0s;
         transition: border 0.2s ease 0s; }
-    @media (max-width: 860px) {
-        .item-image {
-            height: auto; } }
 
     .item-content {
-        float: left;
         width: 100%;
         max-width: 185px;
-        margin: 20px 0 0 0; }
-    @media (max-width: 620px) {
-        .item-content {
-            margin: 10px 0 0 0; } }
+    margin-top: 5px;}
     .item-content .item-year,
     .item-content .item-genre {
         width: 100%;
         float: left;
         color: #888;
-        font-size: 14px;
-        margin: 0 5px 0 0; }
-    .dark .item-content .item-year, .dark
-    .item-content .item-genre {
-        color: #626262; }
-    .item-content .item-year i,
-    .item-content .item-genre i {
-        font-style: normal;
-        text-transform: uppercase;
-        float: right; }
-    @media (max-width: 860px) {
-        .item-content .item-year,
-        .item-content .item-genre {
-            font-size: 13px; } }
-    .item-content .item-title {
-        color: #484848;
-        clear: both;
-        font-size: 17px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        max-width: 100%;
-        text-decoration: none;
-        float: left; }
-    .dark .item-content .item-title {
-        color: #717171; }
-    .item-content .item-title:hover {
-        color: #e5a00d; }
-    .item-content .item-title:active {
-        color: #94690d; }
-    @media (max-width: 860px) {
-        .item-content .item-title {
-            font-size: 15px; } }
+        font-size: 14px; }
 
-    .v-application a{
-        color: #e5a00d !important;
-    }
 
 </style>

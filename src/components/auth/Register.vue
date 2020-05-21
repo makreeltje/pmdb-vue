@@ -5,7 +5,7 @@
         <v-row align="center" justify="center">
           <v-col cols="12" md="4">
             <v-card class="elevation-12">
-              <v-toolbar color="primary" dark flat>
+              <v-toolbar color="rgb(229, 160, 13)" dark flat>
                 <v-toolbar-title>Register</v-toolbar-title>
               </v-toolbar>
               <v-card-text>
@@ -46,23 +46,13 @@
                           v-validate="'required|min:6|max:40'"
                           required
                   />
-                  <!--<v-text-field
-                  v-model="confirmPassword"
-                  :rules="[rules.confirmPassword]"
-                  :type="show ? 'text' : 'password'"
-                  @click:append="show = !show"
-                  label="Confirm Password"
-                  prepend-icon="mdi-lock"
-                  v-validate="'required|confirmed:password'"
-                  required
-                  />-->
 
                   <v-alert v-if="message" :type="successful ? 'success' : 'error'">{{ message }}</v-alert>
 
                   <v-layout align-end justify-end class="my-2">
                     <v-btn
                             type="submit"
-                            color="primary"
+                            color="rgb(229, 160, 13)"
                             :disabled="loading"
                             :loading="loading"
                     >Sign up
@@ -107,13 +97,12 @@
                     email: this.email,
                     password: this.password,
                 })
-                    // eslint-disable-next-line no-unused-vars
-                    .then(response => {
+                    .then(() => {
                         this.$router.push('/login')
                     })
                     .catch(error => {
                         this.loading = false;
-                        this.message = (error.response && error.response.data.error) || error.message || error.toString();
+                        this.message = error.response.data.message
                     })
             }
         }

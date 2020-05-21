@@ -9,21 +9,28 @@ export const store = new Vuex.Store({
     state: {
         token: localStorage.getItem('access_token') || null,
         movies: [],
+        externalMovies: [],
 
     },
     getters: {
-        moviesFiltered(state) {
+        getMovies(state) {
             return state.movies
+        },
+        getExternalMovies(state) {
+            return state.externalMovies
         },
         loggedIn(state) {
             return state.token !== null
         }
     },
     mutations: {
-        retrieveMovies(state, movies) {
+        setMovies(state, movies) {
             state.movies = movies
         },
-        retrieveToken(state, token) {
+        setExternalMovies(state, externalMovies) {
+            state.externalMovies = externalMovies
+        },
+        setToken(state, token) {
             state.token = token
         },
         destroyToken(state) {
@@ -32,19 +39,44 @@ export const store = new Vuex.Store({
 
     },
     actions: {
-        retrieveMovies(context) {
+        fetchMovies(context) {
             axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.token
             axios.get('/movies')
                 .then(response => {
-                    context.commit('retrieveMovies', response.data)
+                    context.commit('setMovies', response.data)
                 })
                 .catch(error => {
                     console.log(error)
                 })
         },
+        fetchExternalMovies(context, query) {
+            axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.token
+            axios.get('/request/movie', {
+                params: {
+                    'query' : query
+                }
+            })
+                .then(response => {
+                    context.commit('setExternalMovies', response.data)
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+
+        },
+        fetchExternalPopularMovies(context) {
+            axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.token
+            axios.get('/request/movie/popular')
+                .then(response => {
+                    context.commit('setExternalMovies', response.data)
+                })
+                .catch(error => {
+                    console.log(error)
+                })
+
+        },
         retrieveToken(context, credentials) {
-            return new Promise((resolve, reject) => {
-                axios.post('/auth/signin', {
+                return axios.post('/auth/signin', {
                     username: credentials.username,
                     password: credentials.password,
                 })
@@ -52,17 +84,10 @@ export const store = new Vuex.Store({
                         const token = response.data.accessToken
 
                         localStorage.setItem('access_token', token)
-                        localStorage.setItem('user', JSON.stringify(response.data));
-                        context.commit('retrieveToken', token)
-                        resolve(response)
-                        //console.log(response)
+                        /*localStorage.setItem('user', JSON.stringify(response.data));*/
+                        context.commit('setToken', token)
+                        return response
                     })
-                    .catch(error => {
-                        reject(error)
-                        //console.log(error)
-
-                    })
-            })
         },
         register(context, data) {
             return new Promise((resolve, reject) => {
@@ -88,6 +113,13 @@ export const store = new Vuex.Store({
                 localStorage.removeItem('access_token')
                 context.commit('destroyToken')
             }
+        },
+        requestMovie(context, model) {
+            axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.token
+            return axios.post('/request/movie/post', {
+                theMovieDbId: (parseInt(model.tmdbid)),
+                languageCode: model.language,
+            })
         }
 
     }
