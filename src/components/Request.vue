@@ -40,7 +40,7 @@
                   <v-btn v-if="movie.requested" outlined color="success">
                   <v-icon>mdi-check</v-icon> Requested</v-btn>
                 <v-btn v-else outlined color="primary" @click="requestMovie(movie.theMovieDbId, movie.originalLanguage), activeTab=1">
-                  <v-icon>"{'mdi-plus':activeTab===1}"</v-icon> Request</v-btn>
+                  <v-icon>mdi-plus</v-icon> Request</v-btn>
                 </span>
               </v-col>
             </v-img>
@@ -150,7 +150,7 @@
                 backdropUrl: "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces",
                 tmdbUrl: "https://www.themoviedb.org/movie/",
                 snackbar: false,
-                text: 'Hello, I\'m a snackbar',
+                text: '',
             };
         },
         mounted() {
