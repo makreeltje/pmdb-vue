@@ -2,7 +2,7 @@ import Vue from 'vue';
 import App from './App.vue';
 import VueRouter from 'vue-router';
 import routes from './routes'
-import {store} from './store/store';
+import store from './store'
 import VeeValidate from 'vee-validate';
 import VueFilterPrettyBytes from 'vue-filter-pretty-bytes';
 import vuetify from './plugins/vuetify';
@@ -43,10 +43,9 @@ router.beforeEach((to, from, next) => {
 })
 
 new Vue({
-    el: '#app',
-    router: router,
-    store: store,
-    vuetify: vuetify,
+    router,
+    store,
+    vuetify,
     render: h => h(App)
-})
+}).$mount('#app')
 

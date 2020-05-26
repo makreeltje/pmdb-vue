@@ -1,24 +1,24 @@
 <template>
   <div class="container">
     <header class="jumbotron">
-      <h3>{{publicContent}}</h3>
+      <h3>{{adminContent}}</h3>
     </header>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'User',
   data() {
     return {
     };
   },
   mounted() {
-      this.$store.dispatch('fetchPublicContent')
+      this.$store.dispatch('fetchAdminBoard')
   },
     computed: {
-        publicContent() {
-            return this.$store.getters.getPublicContent
+        adminContent() {
+            return this.$store.getters.getAdminContent
         }
     }
 };
