@@ -67,31 +67,24 @@
 </template>
 
 <script>
-    import MovieService from "@/services/MovieApi";
-
     export default {
         props: ["id"],
         data() {
             return {
-                singleMovie: "",
                 loading: true,
                 imgUrl: "https://image.tmdb.org/t/p/original",
                 backdropUrl: "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces"
             };
         },
         mounted() {
-            MovieService.fetchSingleMovie(this.id)
-                .then(response => {
-                    this.singleMovie = response;
-                    this.loading = false;
-                })
-                .catch(error => {
-                    console.log(error);
-                });
+            this.$store.dispatch('fetchMovie', this.id)
+            .then(() => {
+                this.loading = false
+            })
         },
-        methods: {
-            back() {
-                this.$router.push("/latestmovies");
+        computed: {
+            singleMovie() {
+                return this.$store.getters.getMovie
             }
         }
     };

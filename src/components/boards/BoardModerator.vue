@@ -1,25 +1,25 @@
 <template>
   <div class="container">
     <header class="jumbotron">
-      <h3>{{publicContent}}</h3>
+      <h3>{{moderatorContent}}</h3>
     </header>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'User',
   data() {
     return {
     };
   },
   mounted() {
-      this.$store.dispatch('fetchPublicContent')
+      this.$store.dispatch('fetchModeratorBoard')
   },
     computed: {
-        publicContent() {
-            return this.$store.getters.getPublicContent
-        }
+      moderatorContent() {
+          return this.$store.getters.getModeratorContent
+      }
     }
 };
 </script>
