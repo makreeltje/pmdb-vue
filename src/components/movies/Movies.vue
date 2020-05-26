@@ -1,41 +1,50 @@
 <template>
-  <v-container>
-    <v-row justify="center">
-      <v-col v-if="loading" xs="12" sm="12" md="8" lg="6" xl="8">
-        <v-row xs="12" sm="12" md="8" lg="6" xl="8">
-          <v-layout align-center justify-center>
-            <v-progress-circular :size="200" :width="10" color="rgb(229, 160, 13)" indeterminate></v-progress-circular>
-          </v-layout>
-        </v-row>
-      </v-col>
-      <div style="width: 70%">
-        <v-text-field v-model="search" placeholder="Search Title..."></v-text-field>
-      </div>
+  <v-content>
+    <NavBar/>
+    <v-container>
+      <v-row justify="center">
+        <v-col v-if="loading" xs="12" sm="12" md="8" lg="6" xl="8">
+          <v-row xs="12" sm="12" md="8" lg="6" xl="8">
+            <v-layout align-center justify-center>
+              <v-progress-circular :size="200" :width="10" color="rgb(229, 160, 13)"
+                                   indeterminate></v-progress-circular>
+            </v-layout>
+          </v-row>
+        </v-col>
+        <div style="width: 70%">
+          <v-text-field v-model="search" placeholder="Search Title..."></v-text-field>
+        </div>
 
-      <div class="flex-container">
-        <div class="flex-item" v-for="(movie, index) in filteredMovies" :key="index">
-          <div class="item-image-wrap">
-            <router-link :to="'movies/' + movie.id">
-              <img :src="imgUrl + movie.poster_path" loading="lazy" class="item-image" alt/>
-            </router-link>
-          </div>
-          <div class="item-content">
-            <span class="item-year">{{ movie.release_date | moment('YYYY') }}</span>
-            <router-link :to="'movies/' + movie.id" class="link">{{ movie.title }}</router-link>
-            <span class="item-genre">
+        <div class="flex-container">
+          <div class="flex-item" v-for="(movie, index) in filteredMovies" :key="index">
+            <div class="item-image-wrap">
+              <router-link :to="'movies/' + movie.id">
+                <img :src="imgUrl + movie.poster_path" loading="lazy" class="item-image" alt/>
+              </router-link>
+            </div>
+            <div class="item-content">
+              <span class="item-year">{{ movie.release_date | moment('YYYY') }}</span>
+              <router-link :to="'movies/' + movie.id" class="link">{{ movie.title }}</router-link>
+              <span class="item-genre">
             <span v-for="(genres, index) in movie.genres" :key="index">{{ genres.name }}<span
                     v-if="index != movie.genres.length - 1">, </span></span>
             </span>
+            </div>
           </div>
         </div>
-      </div>
-    </v-row>
-  </v-container>
+      </v-row>
+    </v-container>
+  </v-content>
 </template>
 
 <script>
+    import NavBar from "../NavBar";
+
     export default {
         name: "Movies",
+        components: {
+            NavBar
+        },
         data() {
             return {
                 search: '',

@@ -11,7 +11,7 @@ import Logout from './components/auth/Logout.vue';
 import Movies from './components/movies/Movies.vue';
 import Movie from './components/movies/Movie.vue';
 import Request from "./components/Request";
-// import SearchMovie from './components/SearchMovie';
+
 import Profile from './components/Profile.vue';
 
 Vue.use(Router);
