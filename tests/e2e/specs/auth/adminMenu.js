@@ -1,7 +1,7 @@
 module.exports = {
     'check items admin menu': browser => {
         browser
-            .init()
+            .url('127.0.0.1')
             .waitForElementVisible('#app')
             .assert.titleContains('pmdb-vue')
             .assert.visible('input[type=username]')
