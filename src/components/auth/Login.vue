@@ -82,6 +82,7 @@
                         this.message = error.response.data.message
                     })
             }
-        }
+        },
+
     };
 </script>

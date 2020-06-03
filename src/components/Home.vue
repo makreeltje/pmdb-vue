@@ -1,15 +1,19 @@
 <template>
-  <div class="container">
-    <header class="jumbotron">
+  <v-content>
+    <NavBar />
+    <v-container>
       <h3>{{publicContent}}</h3>
-    </header>
-  </div>
+    </v-container>
+  </v-content>
+
 </template>
 
 <script>
+import NavBar from "./NavBar";
 export default {
   name: 'Home',
-  data() {
+    components: {NavBar},
+    data() {
     return {
     };
   },

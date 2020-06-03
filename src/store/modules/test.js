@@ -10,18 +10,10 @@ const state = {
 };
 
 const getters = {
-    getPublicContent(state) {
-        return state.publicContent
-    },
-    getUserContent(state) {
-        return state.userContent
-    },
-    getModeratorContent(state) {
-        return state.moderatorContent
-    },
-    getAdminContent(state) {
-        return state.adminContent
-    },
+    getPublicContent: state => state.publicContent,
+    getUserContent: state => state.userContent,
+    getModeratorContent: state => state.moderatorContent,
+    getAdminContent: state => state.adminContent
 };
 
 const actions = {

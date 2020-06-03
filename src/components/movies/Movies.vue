@@ -1,6 +1,13 @@
 <template>
   <v-content>
-    <NavBar/>
+    <NavBar :title="title" />
+    <form class="search-form text-center">
+      <v-icon class="mdi mdi-magnify" style="color: #717171" size="25"></v-icon>
+      <input prepend-icon="mdi-account" type="text" v-model="search" class="search-input" autofocus
+             placeholder="Search Movie...">
+    </form>
+
+
     <v-container>
       <v-row justify="center">
         <v-col v-if="loading" xs="12" sm="12" md="8" lg="6" xl="8">
@@ -11,58 +18,50 @@
             </v-layout>
           </v-row>
         </v-col>
-        <div style="width: 70%">
-          <v-text-field v-model="search" placeholder="Search Title..."></v-text-field>
-        </div>
-
-        <div class="flex-container">
-          <div class="flex-item" v-for="(movie, index) in filteredMovies" :key="index">
-            <div class="item-image-wrap">
-              <router-link :to="'movies/' + movie.id">
-                <img :src="imgUrl + movie.poster_path" loading="lazy" class="item-image" alt/>
-              </router-link>
-            </div>
-            <div class="item-content">
-              <span class="item-year">{{ movie.release_date | moment('YYYY') }}</span>
-              <router-link :to="'movies/' + movie.id" class="link">{{ movie.title }}</router-link>
-              <span class="item-genre">
-            <span v-for="(genres, index) in movie.genres" :key="index">{{ genres.name }}<span
-                    v-if="index != movie.genres.length - 1">, </span></span>
-            </span>
-            </div>
-          </div>
-        </div>
+        <MovieTile :filtered-movies="filteredMovies" :img-url="imgUrl"/>
       </v-row>
     </v-container>
   </v-content>
 </template>
 
 <script>
+    import {mapActions} from 'vuex'
     import NavBar from "../NavBar";
+    import MovieTile from "./MovieTile";
 
     export default {
         name: "Movies",
         components: {
+            MovieTile,
             NavBar
         },
         data() {
             return {
+                title: 'Movies',
                 search: '',
                 loading: true,
                 isActive: false,
-                imgUrl: "https://image.tmdb.org/t/p/w300_and_h450_bestv2"
+                imgUrl: "https://image.tmdb.org/t/p/w300_and_h450_bestv2",
+                backdropUrl: "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces",
+                tmdbUrl: "https://www.themoviedb.org/movie/",
             };
         },
         mounted() {
-            this.$store.dispatch('fetchMovies')
+            this.fetchMovies()
                 .then(() => {
                     this.loading = false
                 })
         },
         methods: {
+            ...mapActions(['fetchMovies']),
             singleMovie(id) {
                 this.$router.push("/movie/" + id);
-            }
+            },
+            onImageLoadFailure(event) {
+                event.target.src = 'https://ombi.meelsnet.nl//images/default_movie_poster.png'
+
+                console.log(event)
+            },
         },
         computed: {
             filteredMovies() {
