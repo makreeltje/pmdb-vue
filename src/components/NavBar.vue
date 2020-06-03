@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-app-bar color="#e5a00d" dark>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="drawer = true" name="menu"></v-app-bar-nav-icon>
 
       <v-toolbar-title>{{title}}</v-toolbar-title>
 
@@ -11,7 +11,7 @@
         <router-link to="/register">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <v-btn icon v-on="on">
+              <v-btn icon v-on="on" name="register">
                 <v-icon>mdi-account-plus</v-icon>
               </v-btn>
             </template>
@@ -22,7 +22,7 @@
         <router-link to="/login">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <v-btn icon v-on="on">
+              <v-btn icon v-on="on" name="login">
                 <v-icon>mdi-login</v-icon>
               </v-btn>
             </template>
@@ -35,7 +35,7 @@
         <router-link to="/profile">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <v-btn icon v-on="on">
+              <v-btn icon v-on="on" name="profile">
                 <v-icon>mdi-account</v-icon>
               </v-btn>
             </template>
@@ -45,7 +45,7 @@
         <router-link to="/logout">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
-              <v-btn icon v-on="on">
+              <v-btn icon v-on="on" name="logout">
                 <v-icon>mdi-logout</v-icon>
               </v-btn>
             </template>
