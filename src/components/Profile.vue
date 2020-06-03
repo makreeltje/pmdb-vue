@@ -5,7 +5,7 @@
         <v-card-text>
           <v-flex class="mb-4">
             <v-avatar size="96" class="mr-4">
-              <img src="https://randomuser.me/api/portraits/women/43.jpg" />
+              <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="profile picture" />
             </v-avatar>
           </v-flex>
           <v-text-field

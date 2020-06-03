@@ -48,12 +48,12 @@
 
                 <a :href="`https://www.themoviedb.org/movie/${getMovie.tmdb_id}`" class="button-tmdb-rating"
                    target="_blank">
-                  <i v-if="getMovie.tmdb_id"><b><!--{{ getMovie.tmdb_id }}--></b> TMDb</i>
+                  <i v-if="getMovie.tmdb_id"><strong><!--{{ getMovie.tmdb_id }}--></strong> TMDb</i>
                   <i v-else>No TMDB Rating</i>
                 </a>
                 <a :href="`http://www.imdb.com/title/${getMovie.imdb_id}`" class="button-imdb-rating" target="_blank"
                    v-if="getMovie.imdb_id">
-                  <i v-if="getMovie.imdb_id"><b><!--{{ getMovie.imdb_id }}--></b> IMDb</i>
+                  <i v-if="getMovie.imdb_id"><strong><!--{{ getMovie.imdb_id }}--></strong> IMDb</i>
                   <i v-else>No IMDb Rating</i>
                 </a>
               </div>
@@ -65,7 +65,7 @@
         <div class="wrap">
           <div class="subpage-sidebar">
             <div class="subpage-poster-wrap">
-              <img :src="imgUrl + getMovie.poster_path" height="408" width="272"/>
+              <img :src="imgUrl + getMovie.poster_path" height="408" width="272" alt="poster image"/>
             </div>
           </div>
           <div class="subpage-overview">

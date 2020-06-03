@@ -3,7 +3,7 @@
     <div class="flex-item" v-for="(movie, index) in filteredMovies" :key="index">
       <div class="item-image-wrap">
         <router-link :to="'movies/' + movie.id">
-          <img :src="imgUrl + movie.poster_path" loading="lazy" class="item-image" alt/>
+          <img :src="imgUrl + movie.poster_path" loading="lazy" class="item-image" alt="poster image"/>
         </router-link>
       </div>
       <div class="item-content">

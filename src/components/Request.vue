@@ -14,7 +14,7 @@
                    gradient="to right, rgba(0,0,0,0.6), rgba(0,0,0,0.8)">
               <v-col lg="2" class="float-left pa-0">
                 <img :src="imgUrl + movie.posterPath" style="max-height: 300px"
-                     @error="onImageLoadFailure"/></v-col>
+                     @error="onImageLoadFailure" alt="cover image"/></v-col>
               <v-col lg="7" class="float-left ml-5">
                 <h1 class="display-1">{{ movie.title }}</h1>
                 <v-chip-group>
