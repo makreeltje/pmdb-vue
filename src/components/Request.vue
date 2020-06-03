@@ -1,16 +1,11 @@
 <template>
+  <v-content>
+    <NavBar :title="title"/>
+    <form class="search-form text-center" @submit.prevent="getExternalMovies">
+      <v-icon class="mdi mdi-magnify" style="color: #717171" size="25"></v-icon>
+      <input prepend-icon="mdi-account" type="text" v-model="search" class="search-input" autofocus placeholder="Search Movie...">
+    </form>
   <v-container>
-    <v-row justify="center">
-      <v-col lg="8" md="10" sm="12">
-        <v-form name="form" @submit.prevent="getExternalMovies">
-          <v-text-field v-model="search" placeholder="Search Title...">
-            <v-btn type="submit" slot="append-outer">Search</v-btn>
-
-          </v-text-field>
-          <v-btn dark @click="snackbar = true">Open Snackbar</v-btn>
-        </v-form>
-      </v-col>
-    </v-row>
     <v-row justify="center">
       <v-col cols="8">
         <v-row v-for="(movie, index) in filteredMovies" :key="index" class="mb-6" no-gutters>
@@ -136,13 +131,17 @@
       </div>
     </div>-->
   </v-container>
+  </v-content>
 </template>
 
 <script>
+    import NavBar from "./NavBar";
     export default {
         name: "Request",
+        components: {NavBar},
         data() {
             return {
+                title: 'Request',
                 search: '',
                 isActive: false,
                 image: '../assets/default_movie_poster.png',

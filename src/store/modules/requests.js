@@ -7,9 +7,7 @@ const state = {
 };
 
 const getters = {
-    getExternalMovies(state) {
-        return state.externalMovies
-    },
+    getExternalMovies: state => state.externalMovies
 };
 
 const actions = {

@@ -1,18 +1,19 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Home from './components/Home.vue';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from './components/Home'
 
 // auth
-import Login from './components/auth/Login.vue';
-import Register from './components/auth/Register.vue';
-import Logout from './components/auth/Logout.vue';
+import Login from './components/auth/Login'
+import Register from './components/auth/Register'
+import Logout from './components/auth/Logout'
 
 // Movies
-import Movies from './components/movies/Movies.vue';
-import Movie from './components/movies/Movie.vue';
-import Request from "./components/Request";
+import Movies from './components/movies/Movies'
+import Movie from './components/movies/Movie'
+import Request from "./components/Request"
 
-import Profile from './components/Profile.vue';
+import Profile from './components/Profile.vue'
+import AdminDashboard from "./components/AdminDashboard";
 
 Vue.use(Router);
 
@@ -72,6 +73,14 @@ const routes = [
         name: 'movie',
         props: true,
         component: Movie,
+        meta: {
+            requiresAuth: true,
+        }
+    },
+    {
+        path: '/admindashboard',
+        name: 'admindashboard',
+        component: AdminDashboard,
         meta: {
             requiresAuth: true,
         }
