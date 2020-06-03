@@ -1,7 +1,7 @@
 module.exports = {
     'check if movies load in page': browser => {
         browser
-            .url('127.0.0.1')
+            .url('localhost:8080')
             .waitForElementVisible('#app')
             .assert.titleContains('pmdb-vue')
             .assert.visible('input[type=username]')
