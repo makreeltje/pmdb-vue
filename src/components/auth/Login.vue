@@ -13,7 +13,7 @@
                   <v-text-field
                           v-model="username"
                           :rules="[rules.required]"
-                          type="text"
+                          type="username"
                           label="Username"
                           prepend-icon="mdi-account"
                           v-validate="'required'"

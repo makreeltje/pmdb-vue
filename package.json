@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -14,7 +15,7 @@
     "@vue/cli": "^4.3.1",
     "bootstrap": "^4.4.1",
     "core-js": "^3.6.4",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.1",
     "moment": "^2.24.0",
     "popper.js": "^1.16.1",
     "vee-validate": "^2.2.15",
@@ -28,16 +29,20 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.4.1",
     "@vue/cli-plugin-eslint": "~4.3.0",
     "@vue/cli-plugin-router": "^4.3.0",
     "@vue/cli-plugin-vuex": "^4.3.0",
     "@vue/cli-service": "~4.3.0",
     "axios": "^0.18.1",
     "babel-eslint": "^10.1.0",
+    "chromedriver": "83",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "geckodriver": "^1.19.1",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.0",
+    "selenium-server": "^3.141.59",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-axios": "0.0.4",
