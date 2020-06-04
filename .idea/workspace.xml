@@ -21,17 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f61ec5e-fcec-4fca-9a2d-3b995d24420c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_logoutUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_logoutUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_unauthenticated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_unauthenticated.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_userMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_userMenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.61_Windows_profilePage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.61_Windows_profilePage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_movieInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_movieInformation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_moviesOverview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_moviesOverview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_requestPage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_requestPage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +80,7 @@
       <recent name="D:\Git\pmdb-vue\src\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="npm.test:e2e">
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings>
@@ -131,10 +121,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test:e2e" />
         <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="npm.serve" />
         <item itemvalue="npm.lint" />
-        <item itemvalue="npm.test:e2e" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +204,7 @@
       <workItem from="1591219521869" duration="2214000" />
       <workItem from="1591282964948" duration="982000" />
       <workItem from="1591284182312" duration="2643000" />
-      <workItem from="1591287083206" duration="1753000" />
+      <workItem from="1591287083206" duration="2701000" />
     </task>
     <servers />
   </component>
@@ -237,10 +227,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1251" y="158" key="#Dockerfile" timestamp="1590140135381">
-      <screen x="-1920" y="102" width="1920" height="1040" />
+    <state x="892" y="75" key="#Dockerfile" timestamp="1591301005114">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1251" y="158" key="#Dockerfile/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1590140135381" />
+    <state x="892" y="75" key="#Dockerfile/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591301005114" />
     <state x="1148" y="610" key="#ESLint" timestamp="1589640211562">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -274,29 +265,29 @@
     <state x="-1125" y="439" key="FileChooserDialogImpl/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591181410159" />
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1590691562447" />
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1588020921046" />
-    <state width="2539" height="379" key="GridCell.Tab.0.bottom" timestamp="1591286826531">
+    <state width="2539" height="379" key="GridCell.Tab.0.bottom" timestamp="1591302257429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1899" height="267" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591286826531" />
+    <state width="2539" height="379" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257429" />
     <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
-    <state width="2539" height="379" key="GridCell.Tab.0.center" timestamp="1591286826531">
+    <state width="2539" height="379" key="GridCell.Tab.0.center" timestamp="1591302257429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1899" height="267" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591286826531" />
+    <state width="2539" height="379" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257429" />
     <state width="2539" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
-    <state width="2539" height="379" key="GridCell.Tab.0.left" timestamp="1591286826530">
+    <state width="2539" height="379" key="GridCell.Tab.0.left" timestamp="1591302257428">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1899" height="267" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591286826530" />
+    <state width="2539" height="379" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257428" />
     <state width="2539" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
-    <state width="2539" height="379" key="GridCell.Tab.0.right" timestamp="1591286826531">
+    <state width="2539" height="379" key="GridCell.Tab.0.right" timestamp="1591302257429">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1899" height="267" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591286826531" />
+    <state width="2539" height="379" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257429" />
     <state width="2539" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
     <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1590096227657">
       <screen x="0" y="0" width="2560" height="1400" />
