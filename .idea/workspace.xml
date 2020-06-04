@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f61ec5e-fcec-4fca-9a2d-3b995d24420c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" afterDir="false" />
@@ -88,7 +90,15 @@
       <recent name="D:\Git\pmdb-vue\src\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.serve">
+  <component name="RunManager" selected="Docker.Dockerfile">
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -121,6 +131,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="npm.serve" />
         <item itemvalue="npm.lint" />
         <item itemvalue="npm.test:e2e" />
@@ -203,6 +214,7 @@
       <workItem from="1591219521869" duration="2214000" />
       <workItem from="1591282964948" duration="982000" />
       <workItem from="1591284182312" duration="2643000" />
+      <workItem from="1591287083206" duration="1753000" />
     </task>
     <servers />
   </component>

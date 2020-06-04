@@ -5,9 +5,9 @@
 
   <testsuite name="movies.moviesOverview"
     errors="0" failures="0" hostname="" id="" package="movies" skipped="0"
-    tests="1" time="2.315" timestamp="">
+    tests="1" time="2.614" timestamp="">
   
-    <testcase name="check if movies load in page" classname="movies.moviesOverview" time="2.315" assertions="7">
+    <testcase name="check if movies load in page" classname="movies.moviesOverview" time="2.614" assertions="7">
 
     
 
