@@ -20,8 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f61ec5e-fcec-4fca-9a2d-3b995d24420c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +206,7 @@
       <workItem from="1591219521869" duration="2214000" />
       <workItem from="1591282964948" duration="982000" />
       <workItem from="1591284182312" duration="2643000" />
-      <workItem from="1591287083206" duration="2701000" />
+      <workItem from="1591287083206" duration="3651000" />
     </task>
     <servers />
   </component>
@@ -246,10 +248,10 @@
     </state>
     <state x="-1369" y="365" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1589786405537" />
     <state x="734" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589353768333" />
-    <state x="1023" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590517497165">
+    <state x="1023" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591303311675">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1023" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1590517497165" />
+    <state x="1023" y="501" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591303311675" />
     <state x="1010" y="446" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590572937755">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
