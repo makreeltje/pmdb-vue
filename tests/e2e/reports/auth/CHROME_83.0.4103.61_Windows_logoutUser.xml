@@ -5,9 +5,9 @@
 
   <testsuite name="auth.logoutUser"
     errors="0" failures="0" hostname="" id="" package="auth" skipped="0"
-    tests="1" time="2.173" timestamp="">
+    tests="1" time="2.396" timestamp="">
   
-    <testcase name="logout user" classname="auth.logoutUser" time="2.173" assertions="8">
+    <testcase name="logout user" classname="auth.logoutUser" time="2.396" assertions="8">
 
     
 

@@ -1,7 +1,7 @@
 module.exports = {
     'check if page reverts back to login when not authenticated': browser => {
         browser
-            .url('localhost:8080')
+            .url(browser.launchUrl+'movies/')
             .waitForElementVisible('#app')
             .assert.urlContains('/login')
             .pause(500)
