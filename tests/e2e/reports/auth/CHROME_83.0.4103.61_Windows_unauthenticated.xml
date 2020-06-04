@@ -5,9 +5,9 @@
 
   <testsuite name="auth.unauthenticated"
     errors="0" failures="0" hostname="" id="" package="auth" skipped="0"
-    tests="1" time="1.292" timestamp="">
+    tests="1" time="1.208" timestamp="">
   
-    <testcase name="check if page reverts back to login when not authenticated" classname="auth.unauthenticated" time="1.292" assertions="2">
+    <testcase name="check if page reverts back to login when not authenticated" classname="auth.unauthenticated" time="1.208" assertions="2">
 
     
 

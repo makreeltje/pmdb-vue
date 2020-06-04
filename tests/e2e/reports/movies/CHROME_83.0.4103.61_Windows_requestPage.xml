@@ -5,9 +5,9 @@
 
   <testsuite name="movies.requestPage"
     errors="0" failures="0" hostname="" id="" package="movies" skipped="0"
-    tests="1" time="4.099" timestamp="">
+    tests="1" time="4.297" timestamp="">
   
-    <testcase name="check if request page loads properly" classname="movies.requestPage" time="4.099" assertions="11">
+    <testcase name="check if request page loads properly" classname="movies.requestPage" time="4.297" assertions="11">
 
     
 

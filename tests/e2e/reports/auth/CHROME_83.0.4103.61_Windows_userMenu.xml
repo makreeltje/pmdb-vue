@@ -5,9 +5,9 @@
 
   <testsuite name="auth.userMenu"
     errors="0" failures="0" hostname="" id="" package="auth" skipped="0"
-    tests="1" time="3.172" timestamp="">
+    tests="1" time="3.129" timestamp="">
   
-    <testcase name="check items user menu" classname="auth.userMenu" time="3.172" assertions="9">
+    <testcase name="check items user menu" classname="auth.userMenu" time="3.129" assertions="9">
 
     
 
