@@ -5,9 +5,9 @@
 
   <testsuite name="movies.movieInformation"
     errors="0" failures="0" hostname="" id="" package="movies" skipped="0"
-    tests="1" time="2.911" timestamp="">
+    tests="1" time="3.483" timestamp="">
   
-    <testcase name="check if movie information shows up" classname="movies.movieInformation" time="2.911" assertions="10">
+    <testcase name="check if movie information shows up" classname="movies.movieInformation" time="3.483" assertions="10">
 
     
 

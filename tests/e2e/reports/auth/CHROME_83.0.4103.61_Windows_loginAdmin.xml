@@ -5,9 +5,9 @@
 
   <testsuite name="auth.loginAdmin"
     errors="0" failures="0" hostname="" id="" package="auth" skipped="0"
-    tests="1" time="2.078" timestamp="">
+    tests="1" time="2.103" timestamp="">
   
-    <testcase name="login admin user" classname="auth.loginAdmin" time="2.078" assertions="6">
+    <testcase name="login admin user" classname="auth.loginAdmin" time="2.103" assertions="6">
 
     
 
