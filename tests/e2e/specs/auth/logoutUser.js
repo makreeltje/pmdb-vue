@@ -1,7 +1,7 @@
 module.exports = {
     'logout user': browser => {
         browser
-            .init()
+            .url('localhost:8080')
             .waitForElementVisible('#app')
             .assert.titleContains('pmdb-vue')
             .assert.visible('input[type=username]')
