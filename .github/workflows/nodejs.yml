@@ -26,5 +26,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
     - run: npm test
-    - run: npm run test:e2e
-    - run: vue-cli-service test:e2e --use-selenium
+    - run: npm run test:e2e --use-selenium
