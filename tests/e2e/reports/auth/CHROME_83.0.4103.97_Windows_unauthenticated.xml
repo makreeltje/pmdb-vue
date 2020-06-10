@@ -3,25 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="auth.userMenu"
+  <testsuite name="auth.unauthenticated"
     errors="0" failures="0" hostname="" id="" package="auth" skipped="0"
-    tests="1" time="2.958" timestamp="">
+    tests="1" time="1.262" timestamp="">
   
-    <testcase name="check items user menu" classname="auth.userMenu" time="2.958" assertions="9">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    <testcase name="check if page reverts back to login when not authenticated" classname="auth.unauthenticated" time="1.262" assertions="2">
 
     
 

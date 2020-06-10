@@ -20,10 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f61ec5e-fcec-4fca-9a2d-3b995d24420c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_adminMenu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_loginAdmin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_loginUser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_logoutUser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_unauthenticated.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_userMenu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.97_Windows_profilePage.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.97_Windows_movieInformation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.97_Windows_moviesOverview.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.97_Windows_requestPage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/739da3b54a683f61e55efa72444f7702.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/739da3b54a683f61e55efa72444f7702.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0aeeff895c813103f9d76ccd7a018dfe.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0aeeff895c813103f9d76ccd7a018dfe.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39478316f8554699008f46a5bdb7f7ad.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39478316f8554699008f46a5bdb7f7ad.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b4adb3a60232e6ac3519b1efce638944.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b4adb3a60232e6ac3519b1efce638944.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ca5833b4fe329b34e70f789886473f4a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ca5833b4fe329b34e70f789886473f4a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_logoutUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_logoutUser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_unauthenticated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_unauthenticated.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_userMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_userMenu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.61_Windows_profilePage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.61_Windows_profilePage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_movieInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_movieInformation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_moviesOverview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_moviesOverview.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_requestPage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_requestPage.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../partsQuick_fe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gps-jwplayer-front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -82,7 +105,7 @@
       <recent name="D:\Git\pmdb-vue\src\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.test:e2e">
+  <component name="RunManager" selected="npm.serve">
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings>
@@ -123,9 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.serve" />
         <item itemvalue="npm.test:e2e" />
         <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="npm.serve" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -206,7 +229,15 @@
       <workItem from="1591219521869" duration="2214000" />
       <workItem from="1591282964948" duration="982000" />
       <workItem from="1591284182312" duration="2643000" />
-      <workItem from="1591287083206" duration="3651000" />
+      <workItem from="1591287083206" duration="4454000" />
+      <workItem from="1591351415274" duration="1122000" />
+      <workItem from="1591562507276" duration="2718000" />
+      <workItem from="1591602957186" duration="6000" />
+      <workItem from="1591609111250" duration="5150000" />
+      <workItem from="1591686917371" duration="747000" />
+      <workItem from="1591690580970" duration="8834000" />
+      <workItem from="1591723916334" duration="1897000" />
+      <workItem from="1591779279940" duration="1035000" />
     </task>
     <servers />
   </component>
@@ -261,35 +292,35 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="989" y="383" key="#test:e2e/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591285085178" />
-    <state x="-1125" y="439" key="FileChooserDialogImpl" timestamp="1591181410159">
-      <screen x="-1920" y="102" width="1920" height="1040" />
+    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1591691828670">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="-1125" y="439" key="FileChooserDialogImpl/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591181410159" />
-    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1590691562447" />
+    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591691828670" />
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1588020921046" />
-    <state width="2539" height="379" key="GridCell.Tab.0.bottom" timestamp="1591302257429">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1591687781155">
+      <screen x="-1920" y="102" width="1920" height="1040" />
     </state>
-    <state width="1899" height="267" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257429" />
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591687781155" />
+    <state width="2539" height="379" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591304367776" />
     <state width="2539" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
-    <state width="2539" height="379" key="GridCell.Tab.0.center" timestamp="1591302257429">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1591687781155">
+      <screen x="-1920" y="102" width="1920" height="1040" />
     </state>
-    <state width="1899" height="267" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257429" />
+    <state width="1899" height="266" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591687781155" />
+    <state width="2539" height="379" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591304367776" />
     <state width="2539" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
-    <state width="2539" height="379" key="GridCell.Tab.0.left" timestamp="1591302257428">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1591687781155">
+      <screen x="-1920" y="102" width="1920" height="1040" />
     </state>
-    <state width="1899" height="267" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257428" />
+    <state width="1899" height="266" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591687781155" />
+    <state width="2539" height="379" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591304367776" />
     <state width="2539" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
-    <state width="2539" height="379" key="GridCell.Tab.0.right" timestamp="1591302257429">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1591687781155">
+      <screen x="-1920" y="102" width="1920" height="1040" />
     </state>
-    <state width="1899" height="267" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591209555403" />
-    <state width="2539" height="379" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591302257429" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591687781155" />
+    <state width="2539" height="379" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591304367776" />
     <state width="2539" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1589388573560" />
     <state width="2539" height="492" key="GridCell.Tab.1.bottom" timestamp="1590096227657">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -347,11 +378,11 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="344" key="SettingsEditor/0.0.2560.1400/-1920.349.1920.1040@0.0.2560.1400" timestamp="1588020711521" />
-    <state x="831" y="303" width="896" height="913" key="search.everywhere.popup" timestamp="1591286282569">
+    <state x="831" y="303" width="896" height="913" key="search.everywhere.popup" timestamp="1591723934816">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="-1297" y="327" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591207611846" />
-    <state x="831" y="303" width="896" height="913" key="search.everywhere.popup/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591286282569" />
+    <state x="-1297" y="327" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-1920.102.1920.1040@-1920.102.1920.1040" timestamp="1591562732882" />
+    <state x="831" y="303" width="896" height="913" key="search.everywhere.popup/0.0.2560.1400/-1920.102.1920.1040@0.0.2560.1400" timestamp="1591723934816" />
     <state x="1002" y="611" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1587925858204">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

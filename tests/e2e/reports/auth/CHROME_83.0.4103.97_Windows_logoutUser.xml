@@ -3,13 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="auth.userMenu"
+  <testsuite name="auth.logoutUser"
     errors="0" failures="0" hostname="" id="" package="auth" skipped="0"
-    tests="1" time="2.958" timestamp="">
+    tests="1" time="2.292" timestamp="">
   
-    <testcase name="check items user menu" classname="auth.userMenu" time="2.958" assertions="9">
-
-    
+    <testcase name="logout user" classname="auth.logoutUser" time="2.292" assertions="8">
 
     
 

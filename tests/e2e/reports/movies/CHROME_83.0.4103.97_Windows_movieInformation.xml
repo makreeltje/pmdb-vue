@@ -3,13 +3,11 @@
             failures="0"
             tests="1">
 
-  <testsuite name="movies.requestPage"
+  <testsuite name="movies.movieInformation"
     errors="0" failures="0" hostname="" id="" package="movies" skipped="0"
-    tests="1" time="4.068" timestamp="">
+    tests="1" time="3.429" timestamp="">
   
-    <testcase name="check if request page loads properly" classname="movies.requestPage" time="4.068" assertions="11">
-
-    
+    <testcase name="check if movie information shows up" classname="movies.movieInformation" time="3.429" assertions="10">
 
     
 
