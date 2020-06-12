@@ -18,7 +18,7 @@ const getters = {
 
 const actions = {
     fetchPublicContent(context) {
-        return axios.get('/test/all')
+        return axios.get('/test/all/')
             .then(response => {
                 context.commit('setPublicContent', response.data)
             })
@@ -28,7 +28,7 @@ const actions = {
     },
     fetchUserBoard(context) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        return axios.get('/test/user')
+        return axios.get('/test/user/')
             .then(response => {
                 context.commit('setUserContent', response.data)
             })
@@ -38,7 +38,7 @@ const actions = {
     },
     fetchModeratorBoard(context) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        return axios.get('/test/mod')
+        return axios.get('/test/mod/')
             .then(response => {
                 context.commit('setModeratorContent', response.data)
             })
@@ -49,7 +49,7 @@ const actions = {
     },
     fetchAdminBoard(context) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        return axios.get('/test/admin')
+        return axios.get('/test/admin/')
             .then(response => {
                 context.commit('setAdminContent', response.data)
             })

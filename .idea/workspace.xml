@@ -20,33 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f61ec5e-fcec-4fca-9a2d-3b995d24420c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_adminMenu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_loginAdmin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_loginUser.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_logoutUser.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_unauthenticated.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.97_Windows_userMenu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.97_Windows_profilePage.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.97_Windows_movieInformation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.97_Windows_moviesOverview.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.97_Windows_requestPage.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/babel-loader/739da3b54a683f61e55efa72444f7702.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/739da3b54a683f61e55efa72444f7702.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0aeeff895c813103f9d76ccd7a018dfe.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/0aeeff895c813103f9d76ccd7a018dfe.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39478316f8554699008f46a5bdb7f7ad.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/39478316f8554699008f46a5bdb7f7ad.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b4adb3a60232e6ac3519b1efce638944.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/b4adb3a60232e6ac3519b1efce638944.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ca5833b4fe329b34e70f789886473f4a.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.cache/vue-loader/ca5833b4fe329b34e70f789886473f4a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_adminMenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginAdmin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_loginUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_logoutUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_logoutUser.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_unauthenticated.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_unauthenticated.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_userMenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/auth/CHROME_83.0.4103.61_Windows_userMenu.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.61_Windows_profilePage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/main/CHROME_83.0.4103.61_Windows_profilePage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_movieInformation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_movieInformation.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_moviesOverview.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_moviesOverview.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_requestPage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/e2e/reports/movies/CHROME_83.0.4103.61_Windows_requestPage.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/requests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/requests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/modules/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/modules/users.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +215,10 @@
       <workItem from="1591686917371" duration="747000" />
       <workItem from="1591690580970" duration="8834000" />
       <workItem from="1591723916334" duration="1897000" />
-      <workItem from="1591779279940" duration="1035000" />
+      <workItem from="1591779279940" duration="1530000" />
+      <workItem from="1591897369109" duration="27000" />
+      <workItem from="1591898485569" duration="1205000" />
+      <workItem from="1591978295130" duration="55000" />
     </task>
     <servers />
   </component>

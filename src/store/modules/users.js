@@ -21,7 +21,7 @@ const getters = {
 
 const actions = {
     retrieveToken(context, credentials) {
-        return axios.post('/auth/signin', {
+        return axios.post('/auth/signin/', {
             username: credentials.username,
             password: credentials.password,
         })
@@ -39,7 +39,7 @@ const actions = {
     },
     register(context, data) {
         return new Promise((resolve, reject) => {
-            axios.post('/auth/signup', {
+            axios.post('/auth/signup/', {
                 username: data.username,
                 email: data.email,
                 password: data.password,
@@ -64,7 +64,7 @@ const actions = {
     },
     fetchAllUsers(context) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        return axios.get('/auth/users')
+        return axios.get('/auth/users/')
             .then(response => {
                 context.commit('setUsers', response.data)
                 console.log(response.data)
