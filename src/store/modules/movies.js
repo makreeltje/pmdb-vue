@@ -15,7 +15,7 @@ const getters = {
 const actions = {
     fetchMovies(context) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        axios.get('/movies/')
+        axios.get('/movies')
             .then(response => {
                 context.commit('setMovies', response.data)
             })
@@ -25,7 +25,7 @@ const actions = {
     },
     fetchMovie(context, id) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        return axios.get('/movies/' + id + "/")
+        return axios.get('/movies/' + id)
             .then(response => {
                 context.commit('setMovie', response.data)
             })

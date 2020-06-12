@@ -13,7 +13,7 @@ const getters = {
 const actions = {
     fetchExternalMovies(context, query) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        axios.get('/request/movie/', {
+        axios.get('/request/movie', {
             params: {
                 'query' : query
             }
@@ -28,7 +28,7 @@ const actions = {
     },
     fetchExternalPopularMovies(context) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        axios.get('/request/movie/popular/')
+        axios.get('/request/movie/popular')
             .then(response => {
                 context.commit('setExternalMovies', response.data)
             })
@@ -39,7 +39,7 @@ const actions = {
     },
     requestMovie(context, model) {
         axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.getters.getToken
-        return axios.post('/request/movie/post/', {
+        return axios.post('/request/movie/post', {
             theMovieDbId: (parseInt(model.tmdbid)),
             languageCode: model.language,
         })
